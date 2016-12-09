@@ -1,0 +1,32 @@
+ASP 微软推出，asp简单易上手，缺点：脚本语言，要使用大量的组件，没有其他方法提高效率，只能运行在window环境
+JSP Sun公司，服务器端的脚本语言，企业级信息化解决方案
+PHP 可以混合C java多种语法，各种内置数据库的支持，开源。小型应用
+.NET不能跨平台
+
+jsp注释：<!-- 客户端能看到 -->
+        <%-- 开发者专用的注释--%>
+   声明: <%!  int i = 1;   %>
+   输出：<%= expression %>
+   实现程序逻辑：<%  code fragment %>
+   
+   
+编译指令和动作标签:
+   <%@ page   %>  主要功能为设定整个jsp网页的属性和相关功能；
+   <%@ include file=" relativeURL" %> 插入其他JSP
+   <%@ taglib %> 引入标签库
+   <jsp:forward page="" /> 用forward标签跳转页面，只有一个属性page 
+   <jsp:include page="" /> 动态插入文件
+   用标签操作JavaBean
+   <jsp:useBean id="name" class="package.class" />
+   <jsp:setProperty name="myName" property="someProperty" value="value" />
+   <jsp:getProperty name="myName" property="someProperty" />
+ 
+JSP有9个内置对象：request:用户端请求,
+                response:网页传回用户端的响应,
+                out: 用来传送回应的输出,
+                pageContext: 网页的属性在这里管理,
+                session: 与请求有关的会话期,
+                application: 正在执行的内容,
+                config: 构架部件,
+                page: jsp网页本身,
+                exception: 针对错误网页，未捕捉的例外
