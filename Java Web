@@ -63,3 +63,12 @@ ORM：全称Object Relation Mapping，即对象/关系映射。也可理解成�
               3、一个规定mapping metadata的工具
               4、一种技术可以让orm的实现同事务对象一起进行便捷的操作。
  开源，轻量级，可扩展性，灵巧的设计。。。
+ 
+ antlr.jar：Hibernate使用antlr来产生查询分析器。
+ aglib.jar: Hibernate是CGLIB库来实现PO字节的动态生成，
+ asm.jar: ASM字节码，aglib.jar包依赖的包
+ asm-attrs.jar: 字节码库
+ commons-collections.jar: Apach开发的集合类
+ ehcache.jar: 二级缓存
+ jta.jar: JTA规范
+ dom4j.jar: java的xml API，用来读写xml文件
